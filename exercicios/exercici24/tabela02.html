@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 6vh;
+        }
+        table {
+            width: 600px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(51, 49, 49);
+        }
+        thead, tfoot {
+            background-color: rgb(51, 49, 49);
+            color: #fff;
+        }
+        tbody tr:nth-child(odd) { /* 2n-1 - (odd - Impar) */
+            background-color: aqua;
+        }
+        tbody tr:nth-child(even) { /* 2n - (even - Par)*/
+            background-color: rgb(95, 129, 117);
+        }
+        .num {
+            text-align: right;
+        }
+        .id{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso De Tabela Grandes</h1>
+    <!-- Anatomia Para Tabelas grander
+        table
+            THEAD
+                TR
+                TD
+                TH
+            TBODY
+                TR
+                TD
+                TH
+            TFOOT
+                TR
+                TD
+                TH
+    -->
+    <table>
+        <caption>Poupulção Das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col" style="width: 50px;">Id</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="id">1</td>
+                <td>São Paulo</td>
+                <td class="num">46 649 132</td>
+            </tr>
+            <tr>
+                <td class="id">2</td>
+                <td>Minas Gerais</td>
+                <td class="num">21 411 923</td>
+            </tr>
+            <tr>
+                <td class="id">3</td>
+                <td>Rio De Janeiro</td>
+                <td class="num">15 989 929</td>
+            </tr>
+            <tr>
+                <td class="id">4</td>
+                <td>Bahia</td>
+                <td class="num">14 016 906</td>
+            </tr>
+            <tr>
+                <td class="id">5</td>
+                <td>Paraná</td>
+                <td class="num">10 444 526</td>
+            </tr>
+            <tr>
+                <td class="id">6</td>
+                <td>Rio Grande Do Sul</td>
+                <td class="num">10 693 929</td>
+            </tr>
+            <tr>
+                <td class="id">7</td>
+                <td>Pernambuco</td>
+                <td class="num">8 796 448</td>
+            </tr>
+            <tr>
+                <td class="id">8</td>
+                <td>Ceará</td>
+                <td class="num">8 452 381</td>
+            </tr>
+            <tr>
+                <td class="id">9</td>
+                <td>Pará</td>
+                <td class="num">7 581 051</td>
+            </tr>
+            <tr>
+                <td class="id">10</td>
+                <td>Santa Catarina</td>
+                <td class="num">6 248 436</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <th scope="row">Total De Habitantes</th>
+                <td s><strong>210.147.125</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem, ipsum dolor sit amet consectetur 
+        adipisicing elit. Reprehenderit maiores 
+        tenetur dicta eius repellat dolores iure p
+        laceat nemo adipisci exercitationem nam i
+        ncidunt ex, sed saepe? Officia amet repellat r
+        epellendus ab. Lorem ipsum dolor sit, amet c
+        onsectetur adipisicing elit. Cum officiis cu
+        mque eveniet quas ducimus sint esse at modi 
+        vero necessitatibus reprehenderit iure, earum
+        sequi dolores asperiores minima expedita in
+        placeat? Lorem ipsum dolor sit amet consectetu
+        r, adipisicing elit. Optio iure sint laborio
+        sam? Eveniet, amet, laudantium consequuntur d
+        oloremque a fugit vitae ab earum quod voluptat
+        e sint et placeat molestias, ratione dolorem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi officiis quaerat eaque in ab, nulla necessitatibus molestiae veniam odio quas doloribus iusto rem quidem nam delectus sit recusandae, excepturi magni! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit minus a cumque commodi eveniet molestias voluptatibus, iste qui quaerat aperiam id sit dolore, sapiente quas totam quidem nulla hic nesciunt? loe
+    </p>
+</body>
+</html>
